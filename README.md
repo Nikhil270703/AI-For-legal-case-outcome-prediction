@@ -32,9 +32,56 @@ The system is configured to automatically pull these weights during the first ru
 
 ---
 
+
+2. Create a Virtual Environment (Recommended)
+Bash
+python -m venv venv
+# On Windows:
+venv\Scripts\activate  
+# On Mac/Linux:
+source venv/bin/activate
+3. Install Dependencies
+Bash
+pip install -r requirements.txt
+💻 Usage
+To launch the Legal AI Engine locally:
+
+Bash
+streamlit run app.py
+Open http://localhost:8501 in your browser.
+
+Drag and drop a legal PDF (e.g., a Supreme Court Appeal).
+
+Click Analyze Document to receive the prediction.
+
+Click Generate AI Decision Drivers to view the SHAP explainability plot.
+
+📊 Performance Metrics
+Model: Fine-tuned InLegalBERT
+
+Accuracy: 85.2% | Precision: 84.1% | F1-Score: 83.7%
+
+(Note: Outperforms Baseline TF-IDF + SVM which achieved only 62.0% accuracy).
+
+👨‍💻 Team & Acknowledgments
+Developed by: Nikhil Raghuwanshi, Shital Kalekar, Shraddha Dhanwate, Amay Lohar
+
+Guided by: Prof. Priyanka Patil
+
+Institution: Dept of CSE (Artificial Intelligence) - Nutan College of Engineering and Research, Pune.
+
+🔮 Future Scope
+BNS Translation: Transitioning from IPC to Bharatiya Nyaya Sanhita (BNS).
+
+Multilingual Support: Integrating Marathi, Hindi, and Tamil.
+
+Granular Predictions: Predicting sentence lengths and settlement amounts.
+
 ## 🚀 Installation & Setup
 
 ### 1. Clone the Repository
 ```bash
 git clone [https://github.com/Nikhil270703/AI-For-legal-case-outcome-prediction.git](https://github.com/Nikhil270703/AI-For-legal-case-outcome-prediction.git)
 cd AI-For-legal-case-outcome-prediction
+
+
